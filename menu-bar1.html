@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="w-[381px] relative bg-mintcream h-[377px] max-w-[90%] max-h-[90%] overflow-auto text-left text-5xl text-dimgray-100 font-fraunces"
+    >
+      <div class="absolute top-[191px] left-[4px] inline-block w-[268px] h-10">
+        <ul class="m-0 font-inherit text-inherit pl-8">
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div
+        class="absolute top-[55px] left-[0px] inline-block w-[268px] h-10 cursor-pointer"
+        id="popupchartAndIndicator"
+      >
+        <ul class="m-0 font-inherit text-inherit pl-8">
+          <li>Chart and Indicator</li>
+        </ul>
+      </div>
+      <div class="absolute top-[0px] left-[0px] inline-block w-[268px] h-10">
+        <ul class="m-0 font-inherit text-inherit pl-8">
+          <li>Developer Profile</li>
+        </ul>
+      </div>
+      <div class="absolute top-[97px] left-[0px] inline-block w-[268px] h-10">
+        <ul class="m-0 font-inherit text-inherit pl-8">
+          <li>News</li>
+        </ul>
+      </div>
+      <div
+        class="absolute top-[144px] left-[4px] inline-block w-[268px] h-10 cursor-pointer"
+        id="popupeducationalContentText"
+      >
+        <ul class="m-0 font-inherit text-inherit pl-8">
+          <li>Educational Content</li>
+        </ul>
+      </div>
+      <div class="absolute top-[236px] left-[0px] inline-block w-[268px] h-10">
+        <ul class="m-0 font-inherit text-inherit pl-8">
+          <li>About</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var popupchartAndIndicator = document.getElementById("popupchartAndIndicator");
+      if (popupchartAndIndicator) {
+        popupchartAndIndicator.addEventListener("click", function (e) {
+          window.location.href = "./chart-phtoto.html";
+        });
+      }
+
+      var popupeducationalContentText = document.getElementById(
+        "popupeducationalContentText"
+      );
+      if (popupeducationalContentText) {
+        popupeducationalContentText.addEventListener("click", function () {
+          window.open("http://www.youtube.com/      @marketmasterymanish");
+        });
+      }
+    </script>
+  </body>
+</html>

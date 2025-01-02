@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="w-[820px] bg-lightsteelblue-300 max-w-full h-[289px] text-center text-5xl text-black font-fraunces"
+    >
+      <div
+        class="absolute top-[0px] left-[0px] w-[672px] h-[50px] cursor-pointer"
+        id="nifty50Container"
+      >
+        <div
+          class="absolute top-[0px] left-[0px] flex items-center justify-center w-[672px] h-[50px]"
+        >
+          https://www.tradingview.com/symbols/NSE-NIFTY/
+        </div>
+      </div>
+      <div
+        class="absolute top-[119px] left-[15px] w-[791px] h-[50px] cursor-pointer"
+        id="bankNiftyContainer"
+      >
+        <div
+          class="absolute top-[0px] left-[0px] flex items-center justify-center w-[820px] h-[50px]"
+        >
+          https://www.tradingview.com/chart/?symbol=NSE%3ABANKNIFTY
+        </div>
+      </div>
+      <div
+        class="absolute top-[225px] left-[0px] w-[770px] h-16 cursor-pointer"
+        id="sensexContainer"
+      >
+        <div
+          class="absolute top-[0px] left-[0px] flex items-center justify-center w-[770px] h-16"
+        >
+          https://www.tradingview.com/chart/?symbol=BSE%3ASENSEX
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var nifty50Container = document.getElementById("nifty50Container");
+      if (nifty50Container) {
+        nifty50Container.addEventListener("click", function () {
+          window.open("https://www.tradingview.com/symbols/NSE-NIFTY/");
+        });
+      }
+
+      var bankNiftyContainer = document.getElementById("bankNiftyContainer");
+      if (bankNiftyContainer) {
+        bankNiftyContainer.addEventListener("click", function () {
+          window.open("https://www.tradingview.com/chart/?symbol=NSE%3ABANKNIFTY");
+        });
+      }
+
+      var sensexContainer = document.getElementById("sensexContainer");
+      if (sensexContainer) {
+        sensexContainer.addEventListener("click", function () {
+          window.open("https://www.tradingview.com/chart/?symbol=BSE%3ASENSEX");
+        });
+      }
+    </script>
+  </body>
+</html>
